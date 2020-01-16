@@ -1,5 +1,5 @@
 function lambda({ body, query }, done) {
-  done(body.first + body.second);
+  done(Number(body.first) + Number(body.second));
 }
 
 module.exports = lambda;
